@@ -35,7 +35,7 @@ pipeline {
     //     // CLIENT_URL = credentials('CLIENT_URL')
     // }
 
-    // stages {
+    stages {
     //     stage('Verify Workspace') {
     //         steps {
     //             dir('frontend-app/') {
@@ -169,7 +169,7 @@ pipeline {
                 }
             }
         }
-
+    }
         post {
         // success {
         //     dependencyCheckPublisher pattern: 'dependency-check-report.xml'
