@@ -169,9 +169,8 @@ pipeline {
                 }
             }
         }
-    }
 
-    post {
+        post {
         // success {
         //     dependencyCheckPublisher pattern: 'dependency-check-report.xml'
         // }
@@ -180,6 +179,7 @@ pipeline {
             recordIssues enabledForFailure: true, tool: sonarQube() 
         }
     }
-
-
 }
+
+    
+
